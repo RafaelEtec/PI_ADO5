@@ -1,6 +1,8 @@
 package Estrutura_de_Repeticao;
 import java.util.Scanner;
-
+/**
+   por Rafael Ferreira Goulart
+**/
 public class LoginSenha {
     public static void main(String[] args) {
         String user = "Rafael";

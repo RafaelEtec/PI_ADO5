@@ -1,6 +1,7 @@
 package Estrutura_de_Repeticao;
-import java.util.Scanner;
-
+/**
+   por Rafael Ferreira Goulart
+**/
 public class MultiploDeTres {
     public static void main(String[] args) {
         int i = 1;
