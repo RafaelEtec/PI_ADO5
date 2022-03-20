@@ -10,22 +10,25 @@ public class LoginSenha {
         String login,senha;
         String saida = "";
         Scanner ent = new Scanner(System.in);
-        int nTentativas = 0;
+        int nTentativas = 3;
         
         boolean tAcerto = false;
         
         do {
-            System.out.println("Digite o Login: ");
+            
+            System.out.println(
+                      "Você tem "+nTentativas+" tentativas\n"
+                    + "Digite o Login: ");
             login = ent.next();
             System.out.println("Digite a Senha: ");
             senha = ent.next();
-            nTentativas++;
+            nTentativas--;
             
             if (login.equalsIgnoreCase(user) && senha.equals(password)) {
                 tAcerto = true;
                 saida = "Login e Senha Corretos";
             }
-            if (nTentativas == 3) {
+            if (nTentativas == 0) {
                 saida = "Número de Tentativas excedido!";
                 tAcerto = true;
             }
@@ -33,4 +36,4 @@ public class LoginSenha {
         
         System.out.println(saida);
     }
-}
+}   
